@@ -1,0 +1,305 @@
+/* Created By: Ishpreet Singh Bhasin and Manav Singh Gadhoke from Bal Bharati Public School, Pitampura */
+
+html{
+	overflow: hidden;
+	font-family: roboto, arial;
+}
+
+body, html{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background: black;
+}
+
+div{
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4,{
+	font-family: open, sans-serif;
+}
+
+h1{
+	font-size: 300%;
+}
+
+h2{
+	font-size: 250%;
+}
+
+h3{
+	font-size: 200%;
+}
+
+h4{
+	font-size: 150%;
+}
+
+p{
+	font-size: 125%;
+}
+
+*::selection{
+	background: #c64906;
+}
+
+#menu{
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	z-index: 99;
+	color: white;
+	font-family: android;
+	font-size: 200%;
+	padding: 0.2em;
+}
+
+#info{
+	height: 0.7em;
+	width: 0.7em;
+}
+
+#home{
+	font-size: 50%;
+	padding-right: 1em;
+	color: white;
+	text-decoration: none;
+}
+
+#andM{
+	cursor: pointer;
+}
+
+#menu a{
+	transition: color 0.4s;
+}
+
+#menu a:hover{
+	color: #a4c639;
+}
+
+#menuSpacer{
+	display: inline-block;
+	height: 10px;
+}
+
+.page{
+	padding: 50px;
+	width: calc(100% - 100px);
+	min-height: calc(100% - 100px);
+	background: white;
+	color: white;
+	border-top: solid medium white
+}
+
+.one{
+	min-height: calc(100% - 100px);
+	background: -webkit-linear-gradient(top, #c64906, #c62a06);
+	background: -moz-linear-gradient(top, #c64906, #c62a06);
+	background: -ms-linear-gradient(top, #c64906, #c62a06);
+	background: linear-gradient(top, #c64906, #c62a06);
+	border-top: 0;
+}
+
+.one img{
+	position: absolute;
+	top: 125px;
+	display: block;
+	padding: 0;
+	margin: 0;
+	height: calc(100% - 150px);
+	width: auto;
+}
+
+.one > img:nth-child(2){
+	-webkit-animation-duration: 1s;
+	-webkit-animation-fill-mode: forwards;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+}
+
+.one > img:nth-child(4), .one > img:nth-child(5), .one > img:nth-child(6), .one > img:nth-child(7), .one > img:nth-child(9), .one > img:nth-child(10){
+	top: -100%;
+}
+
+.one > img:nth-child(8){
+	opacity: 0;
+	z-index: 51;
+}
+
+.one > img:nth-child(9){
+	z-index: 52;
+}
+
+.one > img:nth-child(3){
+	z-index: 50;
+}
+
+.one > img:nth-child(4), .one > img:nth-child(5), .one > img:nth-child(6), .one > img:nth-child(7){
+	z-index: 49;
+}
+
+.one > img:nth-child(12){
+	z-index: 98;
+}
+
+.limbs{
+	width: calc(100%);
+	height: calc(100%);
+	padding: 50px;
+	top: -50px;
+	left: -50px;
+	position: relative;
+}
+
+.two
+{
+	background: url('design/shade.png'), url('img/android-m.jpg');
+	background-size: 100% 100%;
+}
+
+.three{
+	background: url('design/shade.png'), url('img/nexus.jpg') no-repeat center;
+	background-size: 100%;
+}
+
+.four{
+	background: url('design/shade.png'), url('img/tech.jpg') no-repeat center;
+	background-size: 100% 100%;
+}
+
+.four h1, .four h2{
+	text-align: center;
+}
+
+.four h1{
+	font-size: 400%;
+}
+
+.four h2{
+	font-size: 600%;
+	font-family: roboto, arial;
+}
+
+.pattern{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: url('design/techPattern.png');
+	bottom: 100%;
+}
+
+#skip{
+	height: 1em;
+	padding: 1em;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background: white; 
+	color: #c62a06;
+	font-family: android;
+	border-top-left-radius: 1em;
+	cursor: pointer;
+	transition: -webkit-transform, -ms-transform, transform 0.25s;
+}
+
+#skip:hover{
+	transform: scale(1.1,1.1);
+	-ms-transform: scale(1.1,1.1);
+	-webkit-transform: scale(1.1,1.1);
+}
+
+@font-face{
+	font-family: android;
+	src: url('and_black.ttf');
+}
+
+@font-face {
+  font-family: open;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed Bold'), local('OpenSans-CondensedBold'), url(open.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: roboto;
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('Roboto-Medium'), url(roboto.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+@-webkit-keyframes mShrink{
+	from{
+		-webkit-transform: scale(1,1);
+	}
+	to{
+		-webkit-transform: scale(0,0);
+	}
+}
+
+@keyframes mShrink{
+	from{
+		transform: scale(1,1);
+	}
+	to{
+		transform: scale(0,0);
+	}
+}
+
+
+
+::-webkit-scrollbar{
+	background: #e6e6e6;
+	width: 14px;
+	height: 14px;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #b1b1b1;
+	border-radius: 0px;
+	border: solid 2px #e6e6e6;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: #8c8c8c;
+}
+
+
+
+::-webkit-scrollbar-corner{
+	background: #e6e6e6;
+}
+
+::-webkit-scrollbar-button{
+	background: url('design/scroll.png'), transparent;
+	width: 28px;
+	height: 28px;
+}
+
+::-webkit-scrollbar-button:hover{
+	background: url('design/scrollHov.png'), #787878;
+}
+
+
+::-webkit-scrollbar-button:vertical:decrement{
+	background-position: -1px -2px;	
+}
+
+::-webkit-scrollbar-button:vertical:increment{
+	background-position: -17px -2px;
+}
+
+::-webkit-scrollbar-button:horizontal:decrement{
+	background-position: -33px -17px;	
+}
+
+::-webkit-scrollbar-button:horizontal:increment{
+	background-position: -33px -1px;
+}
